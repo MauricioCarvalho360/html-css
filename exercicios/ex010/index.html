@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <!--'href' é onde coloca o link-->
+    <p>Você pode acessar meu repositório <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">público no Git Hub</a></p><!--'target' abre o link em outra janela, sem fechar a do seu site, O 'rel' ta falando que é um link externo-->
+    <p>Você também pode acessar meu canal <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external"> gratuito no youtube</a></p>
+    <h2>Usando links internos</h2>
+<!--para funcionar desse jeito sem usar link, as paginas devem estar na mesma pasta-->    <p>Esta é a primeira pagina do meu site, Se você quiser, pode acessar também a <a href="pag002.html" rel="next" target="_self">Segunda pagina</a></p><!--'next' significa que ele esta indo para a próxima pagina-->
+    <p>Você também pode ir para nossa <a href="noticias/pag003.html" rel="next" target="_self">pagina numero três</a></p>
+    <h1>Links para download</h1>
+    <ol>
+        <!--Link para a lista de types que existem -> https://www.iana.org/assignments/media-types/media-types.xhtml-->
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="aplication/pdf">Baixar o livro em PDF</a></li>
+    </ol>
+</body>
+</html>

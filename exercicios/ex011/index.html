@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagems/html.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site me vários dispositivos diferente ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+    <!--O 'picture' vai mudar de imagem dependendo do tamanho da tela(ou janela) do usuario-->
+    <!--O 'media' vai dizer o tamanho maximo ou minimo de cada foto-->
+    <!--Deve-se colocar as tags sempre na ordem, a imagem principal (nesse caso a maior)por ultimo e as menores primeiro-->
+        <!--Não funcionol do jeito que eu pensei
+    <source media="(max-height: 300px)"  media="(max-width: 750px)" srcset="imagems/logo-css-200.png" type="image/png">-->
+        <source media="(max-height: 500px)" srcset="imagems/logo-html-200.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagems/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagems/foto-m.png" type="image/png">
+        <img src="imagems/foto-g.png" alt="imagem-flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <!--<p>Vamos aprender s reproduzir áudios em HTML%</p>
+    <audio src="midia/Happy Mistake - RKVC.mp3" controls autoplay></audio>
+    Tipo de mídia aceitos 'MP3 as vezes mpeg' 'WAV' 'OGG'-->
+    <!--Preload 'auto'->vai tocar a musica só depois de baixar todo o conteudo, o que e ruim se o audio for muito grande = 'metadata'-> pega augumas imformações como data, duração = 'none' não vai carregar nada até o botão de tocar ser clicado. Também o loop faz o áudio reiniciar sempre que acaba-->
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg"><!--para arquivo mp3-->
+        <source src="midia/guanacast-33.ogg" type="audio/ogg"><!--Para arquivo ogg-->
+        <source src="midia/guanacast-33.wav" type="audio/wav"><!--para arquivo wav, não é recomendado por ter arquivos muito grandes-->
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha a palavra</title>
+    <style>
+        div{
+            height: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        body{
+            background-color: rgba(0, 132, 255, 0.925);
+            align-items: center;
+        }
+        section{
+            background-color: white;
+            height: 200px;
+            border-radius: 50px;
+            width: 500px;
+            justify-self: center
+        }
+        section#comecar{
+            text-align: center;
+            height: 50px;
+            line-height: 40px;
+            width: 200px;
+            justify-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>JOGO DA FORCA</h1>
+    
+    <section>
+        <div>
+            Palavra
+            <input type="text" id="palavra">
+        </div>
+        <div>
+            Dica   
+            <input type="text" id="dica">
+        </div>
+    </section>
+    <div>
+        <a href="Hora_do_jogo.html">
+            <section id="comecar" onclick="comecar()">
+                <p>Começar</p>
+            </section>
+        </a>
+    </div>
+    <p id="teste">aaa</p>
+    <script>
+        function comecar(){
+            var bbb = document.getElementById('teste')
+            bbb.innerHTML += 'tudo certo'
+        }
+    </script>
+</body>
+</html>

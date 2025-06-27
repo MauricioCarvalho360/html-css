@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        h1 {
+            box-shadow: inset 5px 3px 7px 1px rgb(0, 0, 0, 0.493);
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            /*box-shadow: direita, baixo, espalhamento, cor; ATENÇÃO, a sombra é do tamanho da caixa, colocar 2px a direita não faz a sombra crescer para a direita, ela movimenta para a direita*/
+            /*box-shadow: inset 2px 2px 2px black; colocando inset antes a sombra fica interna, a cor da sombra deve ser transparente*/
+            box-shadow: 5px 3px 5px 1px rgba(0, 0, 0, 0.493);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            /*Ordem topo esqueda, topo direira, baixo direita, baixo esquerda, da para botar só dois valores ou um também*/
+            border-radius: 10px 20px 30px 40px;
+            box-shadow: 4px 4px 9px 9px rgba(0, 0, 0, 0.493);
+        }
+
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(165,0165,0165);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body><!--O header e main são como divs mas são mais atuais/semanticos organizão melhor o site e são preferidos aos mecanismos de busca-->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes politíca Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi temporibus veritatis ullam veniam, ut possimus, voluptatum ipsa aperiam voluptates voluptas quibusdam debitis nam eius quaerat neque tempora qui harum recusandae.</p>
+                <aside>
+                    <p>Artigo escrito por José Da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por curso em video</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

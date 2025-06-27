@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas ordenadas jeito errado</h2>
+    1 - Acordar
+    2 - Ligar para o João
+    3 - Tomar café
+    4 - Escovar os dentes
+    5 - Lavar a roupa
+    <h2>listas ordenadas jeito certo</h2>
+<!--'ol' significa ordenador de listas-->
+    <ol type="1" start="0"><!--O type com que você vai contar'abc' ou '123' start fala em que numero você quer começar a lista, sem nada começa no 1-->
+        <li>Acordae</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Lavar roupa</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para a casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas nao ordenadas</h2><!--Vai mostrar uma lista mas sem enumerar-->
+    <ul type="disc"><!--disc-> ponto , circle-> circulo ,  square-> quadrado-->
+        <li>pão  <!--A TAG 'li' não precisa ser fechada-->
+        <li>leite
+        <li>tomate
+        <li>manteiga</li>
+        <li>arroz</li>
+        <li>feijão</li>
+    </ul>
+    <h2>Minhas linguagems favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a"><!--desse jeito eu estou aninhando tags, igual se faz com o if-->
+            <li>Clipper</li>
+            <li>Visual basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"><!--como eu quero que começe na 'e', eu coloco o numero '5' porque 'e' é a quinta letra do alfabeto-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Java-script</li>
+            <li>kotlin</li>
+        </ol>
+    </ol>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>Nintendo</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>Nintendo switch</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+        <li>Lista de definições</li><!--funcionam como dicionarios-->
+        <dl>
+            <dt>HTML</dt><!--função-->
+            <dd>Linguagem de marcação para a criação do conteudo de um site</dd><!--descrição-->
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site</dd>
+            <dt>JAVA-SCRIPT</dt>
+            <dd>Linguagem de programação para a criação de interatividades de um site</dd>
+        </dl>
+
+    </ol>
+</body>
+</html>

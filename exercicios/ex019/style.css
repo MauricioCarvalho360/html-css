@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/*  em HTML é id = em CSS é #
+    em HTML é class= em CSS é .
+*/
+/*
+A diferença entre id e class(não usar espaços em nenhum dos dois)
+    Id = Só se pode ter um com o mesmo nome por pagina(se colocar dois funciona, mas é errado),
+    class = Como o nome diz, cria uma clase onde varios elementos podem ter o mesmo nome
+    ------------- Hierarquia -------------
+    h1 < class sobrepõe h1 < id sobrepõe class
+*/
+
+body {
+    /*background-color: rgba(0, 255, 255, 0.274);*/
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #1e402f;
+}
+
+h2 {
+    color: #3c805e;
+}
+/*Não precisa colocar o tipo antes ex:'h1, h2, h3'*/
+h1#principal {/*Por id*/
+    text-align: center;
+    color: white;
+    background-color: #3c805e;
+}
+
+/*Não precisa colocar o tipo antes ex:'h1, h2, h3'*/
+/*Por class*/
+.basico {
+    color: #3c805e;
+}
+
+.intermediario {
+    color: #80793c;
+}
+
+.avancado {
+    color: #803c3c;
+}
+
+.destaque{
+    background-color: #c5c56070;
+}
+
+.italico {
+    font-style: italic;
+    text-decoration: underline;
+}

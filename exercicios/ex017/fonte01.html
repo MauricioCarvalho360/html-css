@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em css</title>
+    <style>
+        body {
+            /*Não precisa dizer sempre qual fonte é, tem como escolher o tipo de fonte(sans-serif, serif, monospace, cursive, fantasy etc). Nesse caso se as duas da frente não estiverem disponiveis ele vai usar uma font sans-serif aletória, por isso e remendado terminar sua 'SAFE COMBINATION' com um tipo/nome genérico*/
+            font-family: Arial, Helvetica, sans-serif;
+            /*Medidas Absolutas
+            cm(centimetro), mm(milimetro), in(polegada), px(pixel), pt(ponto, o tamanho das letras no word é calculada em pontos)Não recomendado, pc(paica=> 1pc == 12pt ou 1/6 polegada)Não recomendado
+
+            Medidas Relativas
+            em(Altura x da letra maiuscula), 
+            ex(Altura x da fonte, 1em é geralmente 16px(que é a altura padrão das letras nos navegadores)), 
+            rem(semelhante ao em, mas é calculado a partir da altura definida no body), 
+            vw(largura da viewport(sua tela)), 
+            vh(altura da viewport), 
+            %(porcentagem)
+            */
+            font-size: 1em;/*16px é normalmente o tamanho padrão, recomenndado usar o em*/
+        }
+        /*h1, h2{
+            font-family: 'Times New Roman', Times, serif;
+        }*/
+
+    </style>
+</head>
+<body>
+    <!--'times new roman' é a fonte padrão do chrome-->
+    <!--'SAFE COMBINATION'na hora de escolher fontes que aparece muitas, não é que serão todas aplicadas, mas se a primeira fonte não estiver baixada no dispositivo, sera usada a segunda e assim por diante-->
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet, exercitationem consectetur autem reiciendis magni molestias ullam asperiores esse quae! Dolorum ab at tenetur dolore laudantium natus quod quo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, quam sit? Fuga ad distinctio magni voluptatibus porro minima eum, quo iste nulla rerum! Natus repellat, doloribus perspiciatis totam vero in?Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corporis ratione libero provident non perferendis voluptatum dolorum, ut eveniet nihil. Ducimus quod cupiditate dolorem culpa minima, earum labore dolor odit!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi assumenda impedit, ad reprehenderit nisi rerum distinctio sapiente ipsam? Ratione eaque alias quaerat iusto vel veniam, enim aperiam ipsa at! Rem.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus velit ipsum voluptates cumque, nostrum molestiae aperiam exercitationem possimus, deleniti cupiditate dolores aliquid, quidem distinctio sed officiis quaerat quis? Molestias.</p>
+</body>
+</html>

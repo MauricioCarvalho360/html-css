@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo De Caixas</title>
+    <style>
+        h1 { /*box-level*/
+
+            display: inline;/*para transformar de boxline */
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+
+            /*shorthands
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            A ordem é whidth, style, e color*/
+            border: 10px solid darkslategray;
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            Ordem -> border: cima(top), direita(right), esquerda(left), baixo(bottom)*/ 
+            padding: 10px 20px;/*ele vai fazer uma com o primeiro valor, outra com o segundo e depois repetir, mas se forem todas iguais, só é preciso informar uma vez,*/
+
+            /*margin: auto; <- para deixar centralisado
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px;*/
+            margin: 20px auto 40px auto;
+
+            /*A outline fica na margin, colada na border e o limite dele e calculado pela margin, mesmo que ele fique maior que a margin o tamanho da margin não é alterado por ele*/
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: red;*/
+            outline: 5px dashed red;
+        }
+
+        a { /*inline-level*/
+
+            display: block; /*para transformar em boxlevel*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--'user agent' são coisas que o navegador configurou por padrão, é o naavegador que esta exibindo seu conteudo-->
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos também são exemplos de box-levels, mas os <a href="#">links são exemplos de box-inline</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em css</title>
+    <style>
+    
+        * { /*configurações globais das css */
+            height: 100%;
+        }
+        body {/*'direita = to right' 'esquerda = to left' 'cima = to top' 'baixo = to bottom' ou graus ex: 45deg, 90deg, 120deg*/
+        /*tipos de degrade, linear, radial etc*/
+        /*Também da para colocar a porcentagem da tela que a cor deve ocupar Ex; se eu quiser que o azul ocupe 25% da tela*/
+            background-image: linear-gradient(45deg, #486AD6 15%, #AC34B1,#B93490, #DB2D71, #F8722E, #FEDC82 85% /*o ultimo é o contrario, quanto maior a area que você quer que ele ocupe, menor deve ser o numero*/);
+            background-attachment: fixed;/*O texto mexe mas o fundo fica parado*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

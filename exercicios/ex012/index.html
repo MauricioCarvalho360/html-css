@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <!--Formatos de videos mais compativeis ->'MP4'.mp4 ou .m4v = 'WEBN' leves mas com mal qualidade = 'OGV' -->
+    <!--Não é recomendado usar esse metodo porque gasta muita banda, já que esse video vai estar hospedado em um servidor-->
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor</p>
+    <!--'poster' é a capa do video-->
+    <video src="midia/video.2fhd.mp4" width="300" poster="imagens/limoes-capa.png" controls></video>
+    <!--Do jeito abaixo, se o player de cima não funcionar, ele vai pro de baixo-->
+    <video controls  width="300" autoplay loop>
+        <source src="midia/video.fhd.mp4" type="video/mp4">
+        <source src="midia/Video.2Fhd.mp4" type="video/mp4">
+        <source src="midia/Video.3Fhd.webm" type="video/webm">
+        <source src="midia/Video.2Fhd.ogv" type="video/ogv">
+        <p>Seu navegador não tem conpatibilidade com reprodução de vídeo</p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/IGTJyeSGrzI?si=8jZBPy5GgI1vlQB-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/29315013?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Animation Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
