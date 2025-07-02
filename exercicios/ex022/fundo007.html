@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            position: relative;/*ja é relative por padrão*/
+            height: 96vh;
+            background-color: purple;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            padding: 10px;
+        }
+
+        #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            left: 50%;
+            top: 50%;
+
+            /*faz alterações de transformação em caixas*/
+            /*No translate numeros positicos mexem para direita e para cima, numeros negativos mexem para esquerda e para baixo*/
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <!--Para centralizar verticalmente, deve haver a presença de um conteiner e dentro dele um conteudo, o qual sera centralizado-->
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
