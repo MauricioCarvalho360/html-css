@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
             /*Mesmo com uma imagem de fundo, é recomendado escolher uma cor de fundo, para casos em que a imagem (por ser muito grande) demore a ser carregada */
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
+
+            /*Shorthand - background 
+            color > image > position > repeat > [size-nao funciona] > attachment*/
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed ;
             /*contain=> mostra a imagem sem cortes
             cover=> vai cobrir a tela inteira mesmo que precise cortar sertas partes fora*/
             background-size: cover;
@@ -19,7 +20,7 @@
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -30,6 +31,9 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius culpa voluptas facere laudantium dignissimos veniam, recusandae debitis nam animi. In accusamus delectus cupiditate doloremque earum itaque nostrum consequuntur error dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur quia aliquam nemo! Deleniti laborum, reprehenderit illo consequuntur mollitia aliquam provident soluta ratione, numquam, fuga voluptas dolorem hic eius veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint alias molestias, molestiae architecto consequuntur doloremque illo, saepe dolores odio similique iste expedita a eaque sunt. Magnam praesentium temporibus nemo earum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius culpa voluptas facere laudantium dignissimos veniam, recusandae debitis nam animi. In accusamus delectus cupiditate doloremque earum itaque nostrum consequuntur error dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur quia aliquam nemo! Deleniti laborum, reprehenderit illo consequuntur mollitia aliquam provident soluta ratione, numquam, fuga voluptas dolorem hic eius veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint alias molestias, molestiae architecto consequuntur doloremque illo, saepe dolores odio similique iste expedita a eaque sunt. Magnam praesentium temporibus nemo earum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius culpa voluptas facere laudantium dignissimos veniam, recusandae debitis nam animi. In accusamus delectus cupiditate doloremque earum itaque nostrum consequuntur error dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur quia aliquam nemo! Deleniti laborum, reprehenderit illo consequuntur mollitia aliquam provident soluta ratione, numquam, fuga voluptas dolorem hic eius veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint alias molestias, molestiae architecto consequuntur doloremque illo, saepe dolores odio similique iste expedita a eaque sunt. Magnam praesentium temporibus nemo earum!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius culpa voluptas facere laudantium dignissimos veniam, recusandae debitis nam animi. In accusamus delectus cupiditate doloremque earum itaque nostrum consequuntur error dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur quia aliquam nemo! Deleniti laborum, reprehenderit illo consequuntur mollitia aliquam provident soluta ratione, numquam, fuga voluptas dolorem hic eius veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint alias molestias, molestiae architecto consequuntur doloremque illo, saepe dolores odio similique iste expedita a eaque sunt. Magnam praesentium temporibus nemo earum!</p>
     </main>
 </body>
