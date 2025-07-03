@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(imagens/pexels-pixabay-121472.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10%;
+}
+
+article {
+    height: 65vh;
+}
+
+article.com_fundo {
+    background-color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+}
