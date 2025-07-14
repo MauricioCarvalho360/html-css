@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            border: 5px solid red;
+        }
+
+        tr.linha {
+            background-color: rgba(128, 128, 128, 0.349);
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        td.dados {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+    HIERARQUIA DE TABELAS (simples)
+    TABLE = tabela
+        TABLE ROW = linha de tabela
+            TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dados de tabela
+    -->
+    <table>
+        <tr class="linha"> <!--primeira linha-->
+            <td>A1
+            <td>B1
+            <td>C1 <!--'tr' e 'td' não é obrigatório fechar(mas é recomendado)-->
+        <tr> <!--segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="linha"> <!--terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!--quarta linha-->
+            <td>A4</td>
+            <td class="dados">B4</td>
+            <td>C4</td>
+            Teste <!--se a hierarquia não for obedecida, os dados vão aparecer antes ou depois da tebela-->
+        </tr>
+    </table>
+</body>
+</html>
