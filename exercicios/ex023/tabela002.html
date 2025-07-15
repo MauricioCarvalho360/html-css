@@ -19,9 +19,26 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        tbody >tr:nth-child(2n) { /*a cada duas linhas vai deixar cinza*/
+            background-color: lightgray;
+        }
+
+        tbody >tr:nth-child(odd){/*Tambem pode configurar para os numeros impares ou pares*/
+            background-color: lightseagreen;
+            font-weight: bold;
+            text-decoration: underline;
         }
 
         .num {
@@ -33,19 +50,22 @@
     <h1>Uso de tabelas grandes</h1>
     <!--
     Anatomia para tabelas grandes
-        CAPTION
-        THEAD <- não é obrigatório
-            TR, TD, TH
-        TBODY
-            TR, TD, TH
-        TFOOT <- não é obrigatório
-            TR, TD, TH
+        TABLE
+            CAPTION
+            THEAD <- não é obrigatório
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT <- não é obrigatório
+                TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption><!--o Caption fica emcima da tabela idependente do onde ele for colocado-->
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <!--scope=col é porque eles são títulos de colunas-->
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 90px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -160,8 +180,9 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de abitantes</th>
-                <td class="num"><strong>12 324 957</strong></td>
+                <!--Usa-se scope=row porque ele é o título da linha-->
+                <th scope="row">Total de abitantes</th>
+                <td class="num"><strong>212 583 750</strong></td>
             </tr>
         </tfoot>
     </table>
