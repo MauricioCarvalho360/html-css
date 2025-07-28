@@ -1,0 +1,10 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(imagens/fundo-madeira.jpg);
+    background-size: 120vw;
+    background-repeat: ;
+}
