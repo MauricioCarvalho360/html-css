@@ -11,6 +11,7 @@ body {
 }
 
 main {
+    display: inline-block;
     text-align: center;
     padding-top: 20vh;
 }
@@ -33,5 +34,7 @@ iframe#tela {
 
 section {
     display: inline-block;
+    background-color: aqua;
+    width: 100px;
 }
 
