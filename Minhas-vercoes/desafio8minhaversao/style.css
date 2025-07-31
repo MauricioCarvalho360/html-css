@@ -27,15 +27,16 @@ div#conteiner1 {
     display: inline-block;
     width: 60vh;
     padding-top: 20vh;
-    align-items: ;
+    text-align: right;
 }
 
 div#conteiner2{
     display: inline-block;
-    width: 100px;
+    width: 00px;
     overflow: hidden;
     background-color: chartreuse;
     height: 60vh;
+    text-align: right;
 }
 
 div#celular {
