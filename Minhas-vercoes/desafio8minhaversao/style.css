@@ -11,9 +11,31 @@ body {
 }
 
 main {
+    /*text-align: center;*/
+    width: 100vw;
+}
+
+main > div#celular {
+    text-align: left;
+}
+
+/*main #conteiner2 {
+    text-align: right;
+}*/
+
+div#conteiner1 {
     display: inline-block;
-    text-align: center;
+    width: 60vh;
     padding-top: 20vh;
+    align-items: ;
+}
+
+div#conteiner2{
+    display: inline-block;
+    width: 100px;
+    overflow: hidden;
+    background-color: chartreuse;
+    height: 60vh;
 }
 
 div#celular {
@@ -21,7 +43,7 @@ div#celular {
     width: 30vh;
     height: 60vh;
     background-image: url(imagens/frame-iphone.png);
-    background-size: auto 100%;
+    background-size: 100%;
 }
 
 iframe#tela {
@@ -32,9 +54,10 @@ iframe#tela {
     overflow: hidden;
 }
 
-section {
+div#botoes {
+    overflow: hidden;
     display: inline-block;
     background-color: aqua;
-    width: 100px;
+    height: 100%;
 }
 
