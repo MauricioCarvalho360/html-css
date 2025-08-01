@@ -32,7 +32,7 @@ div#conteiner1 {
 
 div#conteiner2{
     display: inline-block;
-    width: 00px;
+    width: 300px;
     overflow: hidden;
     background-color: chartreuse;
     height: 60vh;
