@@ -23,34 +23,64 @@ main {
 div#conteiner1 {
     overflow: hidden;
     display: inline-block;
-    width: 60vw;
+    width: 87vw;
     text-align: center;
-    background-color: red;
+    /*background-color: red;*/
     height: 98vh;
 }
 
 div#celular {
     margin-top: 60px;
     display: inline-block;
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 500px;
     background-image: url(imagens/frame-iphone.png);
     background-size: 100%;
 }
 
-iframe#tela {
-    width: 25.5vh;
-    height: 46vh;
-    padding: 7.5vh 2.2vh;
-    background-size: 300px 200px;
+/*
+width: 600px;
+    height: 1200px;
     overflow: hidden;
+    transform: scale(0.41);
+    margin: 10px;
+*/
+
+#caixinha {
+    margin: 64px 18px ;
+    background-color: rgba(0, 255, 255, 0.315);
+    width: 216px;
+    height: 380px;
+}
+
+iframe#tela {
+    height: 1055px;
+    width: 596px;
+    border: 0;
+    -ms-transform: scale(0.36);
+    -moz-transform: scale(0.36);
+    -o-transform: scale(0.36);
+    -webkit-transform: scale(0.36);
+    transform: scale(0.36);
+
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    overflow: hidden;
+}
+
+#caixinha {
+    size: 100%;
+    background-color: rgba(0, 255, 255, 0.301);
 }
 
 div#conteiner2{
     display: inline-block;
-    width: 39vw;
+    width: 12vw;
     overflow: hidden;
-    background-color: chartreuse;
+    /*background-color: chartreuse;*/
     height: 98vh;
     text-align: right;
 }
@@ -58,7 +88,7 @@ div#conteiner2{
 div#botoes {
     overflow: hidden;
     display: inline-block;
-    background-color: aqua;
+    /*background-color: aqua;*/
     height: 100%;
 }
 
