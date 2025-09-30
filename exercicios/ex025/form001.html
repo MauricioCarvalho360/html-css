@@ -13,11 +13,12 @@
 <body>
     <h1>Meu primeiro formulário</h1>
     <form autocomplete="off" action="cadastro.php"><!--tira as sugestões-->
-        <p>Nome: 
-            <input type="text" name="nome " id="nome"><!-- em php e nescessário que todo abjeto de entrada tenha um name, já em javascript o mais importante é o id-->
+        <p><label for="inome">Nome: </label>
+            <input type="text" name="nome " id="inome"><!-- em php e nescessário que todo abjeto de entrada tenha um name, já em javascript e no label o mais importante é o id-->
+            <!--o label e muito util para celulares pois ele aumenta a area de contato pois e como se a palavra nome fosse a caixa de dialogo-->
         </p>
-        <p>Sobrenome: 
-            <input type="text" name="sobrenome" id="sobrenome">
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome">
         </p>
         <p><input type="submit" value="Enviar"></p>
     </form>
