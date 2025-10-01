@@ -12,7 +12,10 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form autocomplete="off" action="cadastro.php"><!--tira as sugestões-->
+    <!--capitulo 24 aula 3 diferencas entre GET e POST
+    O GET se usa quando nao a informações sensiveis senhas etc.tem limite de 3 mil bytes que são 3 mil letras e não envia fotos nem arquívos
+    no POST as informações não aparecem na url-->
+    <form autocomplete="off" method="post" action="cadastro.php"><!--tira as sugestões-->
         <p><label for="inome">Nome: </label>
             <input type="text" name="nome " id="inome"><!-- em php e nescessário que todo abjeto de entrada tenha um name, já em javascript e no label o mais importante é o id-->
             <!--o label e muito util para celulares pois ele aumenta a area de contato pois e como se a palavra nome fosse a caixa de dialogo-->
