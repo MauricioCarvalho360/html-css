@@ -10,10 +10,17 @@
     <form action="cadastro.php" method="get">
         <p>
             <label for="icor">Cor: </label>
-            <input type="color" name="cor" id="icor">
+            <input type="color" name="cor" id="icor" value="#0000ff">
         </p>
-
         <p>
+            <label for="irange">Nivel de satisfação:</label>
+            <input type="range" name="range" id="irange" min="1" max="5" value="1">
+        </p>
+        <p>
+            <label for="ifile">Foto de perfil:</label>
+            <input type="file" name="file" id="ifile"><!--para envios de arquivo deve-se usar o método post-->
+        </p>
+        <p> 
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
