@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Exemplo de formularios</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
 
         <p>
             <label for="iest">Estado: </label>
@@ -39,7 +39,11 @@
                 <option>Professor</option>
             </datalist>
         </p>
-
+        <p>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="5"></textarea>
+            <!--como o area nao tem limite de caracteres, e melhor que o formulário tenha seja do método post, pois o get tem o limite de 3 mil bytes-->
+        </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
